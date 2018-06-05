@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="layout_weight_one">1</dimen>
+    <dimen name="layout_weight_four">4</dimen>
+    <dimen name="title_header_size">28sp</dimen>
+    <dimen name="title_image_size">30dp</dimen>
+    <dimen name="question_font_size">14sp</dimen>
+    <dimen name="question_image_size">200dp</dimen>
+    <dimen name="scrollview_padding">10sp</dimen>
+    <dimen name="radiogroup_padding">5sp</dimen>
+    <dimen name="radiobutton_padding">10sp</dimen>
+    <dimen name="image_question_padding">10sp</dimen>
+    <dimen name="border_size">5sp</dimen>
+    <dimen name="border_zero_size">0sp</dimen>
+
+</resources>
