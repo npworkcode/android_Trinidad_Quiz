@@ -10,7 +10,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
-import java.util.Locale;
+
 
 public class MainActivity extends AppCompatActivity
 {
@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity
     private final static int NUMBER_OF_QUESTIONS = 5;
     private final static String CORRECT_ANSWERS = "correctAnswers";
     private final static String NUMBER_OF_CHECKBOXES_CHECKED = "selectedCheckBoxes";
+    private final static String BLANK_STRING = "";
 
     private final static int MAX_CHECKBOXES_SELECTED = 2;
     Button button;
@@ -30,6 +31,8 @@ public class MainActivity extends AppCompatActivity
     private CheckBox checkBox_1976;
     private CheckBox checkBox_1984;
     private EditText name;
+    private EditText capital;
+    private EditText flagColour;
     private Button resetButton;
     private Button scoreQuizButton;
 
@@ -67,6 +70,8 @@ public class MainActivity extends AppCompatActivity
         checkBox_1984 = findViewById(R.id.question_six_choice_four);
         resetButton = findViewById(R.id.reset_quiz_button);
         scoreQuizButton = findViewById(R.id.score_quiz_button);
+        capital = findViewById(R.id.question_seven_edittext);
+        flagColour = findViewById(R.id.question_eight_edittext);
         setCheckBoxListener();
         setButtonListener();
     }
@@ -245,7 +250,8 @@ public class MainActivity extends AppCompatActivity
         checkBox_1962.setChecked(false);
         checkBox_1976.setChecked(false);
         checkBox_1984.setChecked(false);
-
+        capital.setText(BLANK_STRING);
+        flagColour.setText(BLANK_STRING);
     }
 
     /* This method scores how many questions are right, and stores the value in tallyOfCorrectAnswers
@@ -262,6 +268,13 @@ public class MainActivity extends AppCompatActivity
         }
         if ((checkBox_1962.isChecked()) && (checkBox_1976.isChecked()) && (!checkBox_1953.isChecked()) && (!checkBox_1984.isChecked()))
             correct++;
+
+        if (capital.getText().toString().trim().equalsIgnoreCase( getString(R.string.question_seven_answer )))
+            correct++;
+
+        if (flagColour.getText().toString().trim().equalsIgnoreCase(getString(R.string.question_eight_answer)))
+            correct++;
+
         return correct;
     }
 

@@ -32,8 +32,14 @@
     <string name="question_six_choice_two">1962</string>
     <string name="question_six_choice_three">1976</string>
     <string name="question_six_choice_four">1984</string>
+    <string name="question_seven">What is the capital of Trinidad\?\:</string>
+    <string name="question_seven_answer">Port Of Spain</string>
+    <string name="question_seven_hint">Enter Capital here</string>
+    <string name="question_eight">What does the black in the Trinidad Flag stand for\?\:</string>
+    <string name="question_eight_answer">Earth</string>
+    <string name="question_eight_hint">Enter meaning here</string>
     <string name="button_score_quiz">Score Quiz</string>
     <string name="button_reset_quiz">Reset</string>
     <string name="checkbox_max_message">Cannot select more than two answers</string>
-    <string name="correct_answer_message">%1$s got %2$d out of 6 answers right</string>
+    <string name="correct_answer_message">%1$s got %2$d out of 8 answers right</string>
 </resources>
